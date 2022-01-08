@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div id="icons">
+
+    </div>
+    <div class="wrapper">
+        <div class="main-container">
+            <div id="hour" class="element">
+                <label for="hour">Hours</label>
+                <span>00</span>
+            </div>
+            <div id="minute" class="element">
+                <label for="minute">Minutes</label>
+                <span>00</span>
+            </div>
+            <div id="second" class="element">
+                <label for="second">Seconds</label>
+                <span>00</span>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div id="progress">
+            </div>
+        </div>
+        <input type="time" id="new-time">
+        <button id="set-time" onclick="setTime()"> Set Time</button>
+    </div>
+    <script src="src/script.js"></script>
+    <script src="https://kit.fontawesome.com/88aad794e2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

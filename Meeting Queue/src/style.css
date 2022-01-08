@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Ubuntu&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 0px; */
+}
+
+body {
+    background: #0B486B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F56217, #0B486B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F56217, #0B486B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    width: 75%;
+    min-width: fit-content;
+    max-width: 800px;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin: 10px;
+}
+
+#user-img {
+    margin: 10px 0px 20px 0px;
+    /* width: 200px; */
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+#user-name {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#user-topic {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.controls {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+    .controls {
+        flex-direction: column-reverse;
+    }
+    .submit-buttons,
+    .scroll-control,
+    .details-control {
+        flex-direction: column;
+        display: flex;
+        width: 75%;
+        margin: 5px;
+    }
+}
+
+
+/* ----------------------------- */
+
+.form-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: ghostwhite;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 800px;
+}
+
+#form-heading {
+    margin-bottom: 15px;
+    background-color: #0B486B;
+    width: 100%;
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-container ul {
+    list-style-type: none;
+}
+
+.field-container label {
+    display: block;
+}
+
+.field-container input[type='text'] {
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    margin: 3px 0px 15px 0px;
+}
+
+.field-container input[type='file'] {
+    padding: 5px 0px;
+    width: 100%;
+    margin: 3px 0px 15px 0px;
+}
+
+#form-message {
+    color: red;
+    font-style: italic;
+    font-family: serif;
+    margin: 5px;
+}
+
+.submit-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+/* --------------------------------- */
+
+.btn {
+    color: white;
+    font-size: medium;
+    padding: 8px;
+    border: 0px;
+    border-radius: 4px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blue:hover {
+    background-color: rgb(58, 58, 240);
+    box-shadow: 0px 0px 5px rgb(58, 58, 240);
+}
+
+.red:hover {
+    background-color: rgb(255, 76, 76);
+    box-shadow: 0px 0px 5px rgb(255, 76, 76);
+}
+
+.green:hover {
+    background-color: rgb(7, 177, 7);
+    box-shadow: 0px 0px 5px rgb(7, 177, 7);
+}
+
+.orange:hover {
+    background-color: rgb(240, 170, 41);
+    box-shadow: 0px 0px 5px rgb(240, 170, 41);
+}

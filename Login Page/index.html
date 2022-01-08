@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Form</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2 class="main-heading">Create an Account</h2>
+        <ul>
+            <li class="field-control">
+                <label for="user-name">Username</label>
+                <input type="text" id="user-name" placeholder="John">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+
+                <span>error</span>
+            </li>
+            <li class="field-control">
+
+                <label for="email-id">Email ID</label>
+                <input type="text" id="email-id" placeholder="john@gmail.com">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>error</span>
+
+            </li>
+            <li class="field-control">
+                <label for="mobile-no">Mobile Number</label>
+                <input type="text" id="mobile-no" placeholder="xxxx xxx xxx">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>error</span>
+            </li>
+            <li class="field-control">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>error</span>
+            </li>
+            <li class="field-control">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>error</span>
+            </li>
+        </ul>
+        <button type="submit" onclick="validateInput()">Submit</button>
+        <p>Already have an account? <a href="">Login</a></p>
+    </div>
+    <script src="src/script.js"></script>
+    <script src="https://kit.fontawesome.com/88aad794e2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

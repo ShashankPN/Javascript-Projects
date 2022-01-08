@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Open+Sans&family=Ubuntu&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FBF3FA;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Ubuntu';
+}
+
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    padding: 0px 8px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.logo span {
+    margin: 5px 0px 0px 5px;
+    font-size: 28px;
+}
+
+#menu,
+#search {
+    padding: 10px 10px;
+}
+
+#menu:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.buttons {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    flex-direction: column;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out;
+}
+
+.buttons button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: tomato;
+    border: 2px solid tomato;
+}
+
+.buttons button:hover {
+    border-bottom: 2px solid white;
+    text-shadow: 0px 0px 4px white;
+}
+
+.buttons.active {
+    display: flex;
+    transform: translateY(0%);
+}
+
+#search:hover {
+    cursor: pointer;
+}
+
+#search-bar {
+    visibility: hidden;
+    position: absolute;
+    width: 0%;
+    right: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: rosybrown;
+    border: 1px solid #f0f0f0;
+    transition: width 2s ease-in-out;
+}
+
+#search-bar.active {
+    width: 100%;
+    visibility: visible;
+}
+
+.category-container::-webkit-scrollbar {
+    display: none;
+}
+
+.category-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.circle-item-container {
+    margin: 10px 10px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle-item-container img {
+    border-radius: 100px;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.circle-item-container small {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box-item-container {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+    max-width: 500px;
+}
+
+.box-item-container-img {
+    background: url('../img/pizza.jpg') no-repeat center;
+    height: 170px;
+    width: 100%;
+}
+
+.item-details {
+    padding: 10px 10px 10px 20px;
+}
+
+.item-name-rating {
+    position: relative;
+}
+
+#item-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Baloo Bhaaijaan 2', cursive;
+    font-size: 16px;
+}
+
+.item-rating {
+    position: absolute;
+    right: 35px;
+    bottom: 0px;
+}
+
+#item-description {
+    padding: 0px 0px 8px 10px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 15px 20px 15px;
+    width: 150%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.stop-scroll {
+    overflow: hidden;
+}
+
+.modal-wrapper {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe {
+    overflow-y: scroll;
+    margin: 15px;
+    padding: 10px;
+    background-color: white;
+    width: 90%;
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Open+Sans&family=Ubuntu&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2C3E50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+}
+
+.wrapper {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.element {
+    padding: 10px 10px 5px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #7acedb;
+    padding: 4px;
+    border-radius: 2px;
+    margin: 4px 4px 10px 4px;
+    width: 100%;
+}
+
+span {
+    min-width: 70px;
+    font-size: 3rem;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #afe9f1;
+    margin: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.progress-bar {
+    border: 3px solid #f0f0f0;
+    border-radius: 20px;
+    width: 90%;
+    margin: 4px 0px;
+    margin: 5px 0px 8px 0px;
+    background-color: blanchedalmond;
+}
+
+#progress {
+    min-height: 10px;
+    background: #0B486B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F56217, #0B486B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F56217, #0B486B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 20px;
+}
+
+#set-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 70%;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #2C3E50;
+    color: white;
+    font-weight: bold;
+}
+
+#set-time:hover {
+    text-shadow: 0px 0px 5px white;
+    cursor: pointer;
+}
+
+#new-time {
+    font-size: 14px;
+    border-radius: 8px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: blanchedalmond;
+    padding: 4px 4px 4px 8px;
+    margin-bottom: 5px;
+}
+
+.fa-snowflake-o {
+    color: white;
+    position: absolute;
+    top: -15px;
+    z-index: -1;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}

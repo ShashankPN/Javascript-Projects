@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Queue</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="heading">Next Meeting Goes To</div>
+        <div class="user-details">
+            <img id="user-img" src="./img/default.webp" alt="face">
+            <p id="user-name"></p>
+            <p id="user-topic"></p>
+        </div>
+        <div class="controls">
+            <div class="details-control">
+                <button class="btn green" id="add" onclick="addUser()">Add Member</button>
+                <button class="btn red" id="edit" onclick="editUser()">Edit Details</button>
+            </div>
+            <div class="scroll-control">
+                <button class="btn blue" id="prev" onclick="displayPrev()">Prev</button>
+                <button class="btn orange" id="next" onclick="displayNext()">Next</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-wrapper">
+        <div class="form-container">
+            <h2 id="form-heading">Edit Details of current User</h2>
+            <ul>
+                <li class="field-container">
+                    <label for="member-name">NAME</label>
+                    <input type="text" id="member-name">
+                </li>
+                <li class="field-container">
+                    <label for="member-topic">TOPIC</label>
+                    <input type="text" id="member-topic">
+                </li>
+                <li class="field-container">
+                    <label for="member-img">IMAGE</label>
+                    <input type="file" id="member-img">
+                </li>
+            </ul>
+            <p id="form-message"></p>
+            <div class="submit-buttons">
+                <button type="submit" class="btn orange" id="submit">Submit</button>
+                <button class="btn red" id="form-close" onclick="closeForm()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
